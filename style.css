@@ -1,0 +1,90 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for kids */
+    text-align: center;
+    background: linear-gradient(to bottom right, #87CEFA, #FFB6C1); /* Bright background */
+    padding: 20px;
+}
+
+h1 {
+    color: #FF4500; /* Bright color for the title */
+    text-shadow: 2px 2px #FF69B4; /* Shadow effect */
+}
+
+.game-container {
+    margin: 20px auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for game area */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Shadow for depth */
+}
+
+.word-container, .letter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.drop-box, .letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    margin: 5px;
+    font-size: 32px; /* Larger font for kids */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.drop-box {
+    background-color: #e0f7fa; /* Light blue for drop boxes */
+}
+
+.letter {
+    background-color: #ffeb3b; /* Yellow for letters */
+    color: black;
+    border-radius: 5px; /* Rounded corners for letters */
+}
+
+.letter[draggable="true"] {
+    background-color: #ffd700; /* Gold for draggable letters */
+    cursor: grab;
+}
+
+.letter:active {
+    cursor: grabbing;
+}
+
+#hint-button {
+    background-color: #ff9800; /* Orange button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font for button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hint-button:hover {
+    background-color: #f57c00; /* Darker orange on hover */
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 18px; /* Larger font for info */
+}
+
+.celebration-message {
+    display: none;
+    color: green;
+    font-size: 24px;
+    animation: fadeIn 1s; /* Animation effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

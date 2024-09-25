@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Scramble</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Sanskrit Scramble</h1>
+        <p class="clue">Clue: This dosha represents wind</p>
+        
+        <div class="word-container">
+            <div class="drop-box" id="box1"></div>
+            <div class="drop-box" id="box2"></div>
+            <div class="drop-box" id="box3"></div>
+            <div class="drop-box" id="box4"></div>
+        </div>
+
+        <div class="letter-container">
+            <div class="letter" draggable="true" id="A">A</div>
+            <div class="letter" draggable="true" id="B">B</div>
+            <div class="letter" draggable="true" id="C">C</div>
+            <div class="letter" draggable="true" id="D">D</div>
+        </div>
+
+        <div class="info">
+            <p id="score">Score: 0</p>
+            <p id="level">Level: 1</p>
+            <p id="timer">Time: 30s</p>
+        </div>
+
+        <button id="hint-button" onclick="useHint()">Hint (-5 points)</button>
+    </div>
+
+    <div id="celebration" class="celebration-message">
+        <p>Well done!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
